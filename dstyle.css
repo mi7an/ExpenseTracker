@@ -1,0 +1,104 @@
+body, html {
+    height: 100%;
+    overflow: hidden;
+  }
+  body {
+    margin: 0;
+    padding: 0;
+  }
+  
+  .header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #10ea8f;
+    padding: 10px;
+  }
+  
+  .header img {
+    height: 40px;
+  }
+  
+  nav {
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  
+  nav ul li {
+    margin-right: 10px;
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+    color: #333;
+    padding: 5px;
+  }
+  
+  nav ul li a:hover {
+    color: #000;
+    background-color: #08c979fc;
+    border-radius: 5px;
+  }
+
+
+  .sidebar {
+    width: 200px;
+    padding: 10px;
+  }
+  
+  .sidebar-toggle {
+    display: none;
+  }
+  
+  .toggle-label {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    background-color: transparent;
+    cursor: pointer;
+  }
+  
+  .toggle-label i {
+    color: #ff0101;
+    font-size: 20px;
+  }
+  
+  .sidebar-options {
+    display: none;
+  }
+  
+  .sidebar-toggle:checked + .toggle-label {
+    background-color: #10ea8f;
+  }
+  
+  .sidebar-toggle:checked + .toggle-label i {
+    color: #000;
+  }
+  
+  .sidebar-toggle:checked + .toggle-label + .sidebar-options {
+    display: block;
+  }
+  
+  .sidebar-item {
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: #10ea8f;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+  }
+  
+  .sidebar-item:hover {
+    background-color: #0ac480;
+    color: #fff;
+  }
+  
