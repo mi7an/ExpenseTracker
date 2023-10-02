@@ -31,18 +31,11 @@
         </div>
     </div>
     <script>
-        // Get a reference to the sign-off list item
         var signoffItem = document.getElementById("signoff");
     
-        // Add a click event listener
         signoffItem.addEventListener("click", function(event) {
-            // Prevent the default link behavior (e.g., navigating to a new page)
+            
             event.preventDefault();
-    
-            // Perform your sign-out logic here
-            // For example, you can clear user session data and then redirect to another page:
-            // 1. Clear user session data (if applicable)
-            // 2. Redirect to the sign-in page
             window.location.href = "index.html";
         });
     </script>
